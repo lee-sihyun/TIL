@@ -1,0 +1,85 @@
+# MVC 패턴비교
+
+1. 모델 1과 2의 큰 차이는 처리를 어떻게 하느냐: 컨트롤러의 여부
+
+->form태그의 action을 jsp파일의 경로가 아닌 url주소로 설정함
+
+-jsp파일내 자바코드가 정리된다 
+
+2. jstl의 사용 
+
+
+
+
+-코어태그 라이브러리를 선언하여 <c:if>,<c:forEach>, <c:set> (if,for,set attribute) 태그를 사용한다 
+
+-모델 1에서는 <%=bean.xx%> 였다면 ${xxx}로 단순하게 표현할수 있다. 
+
+원래는 jsp페이지-proc페이지-로구성되어있었다면 
+
+서블릿-jsp페이지로 정리 된다. 
+
+
+
+
+#jstl 사용법
+
+-select문인 list값 불러오기
+
+1.상단에 코어태그 라이브러리 추가
+
+2. <c:foreach var="" items=${}>
+
+var: 변수명으로 테이블명을 잡는다.
+
+items: ${}로 컨트롤러상에서 model.addAttribute("아이템즈값",사용할메소드());
+
+3.값을 불러올때는
+
+<p>${var.불러올컬럼명}</p>
+
+<p>${var.불러올컬럼명}</p>
+
+<p>${var.불러올컬럼명}</p> 
+
+4. 종료시
+
+</c:foreach>
+
+-if문 사용
+
+ 
+
+<c:if test="${}" var=">
+
+-test:조건 설정 => ${memberId!=null}
+
+-var:변수이름 
+
+ 
+
+ 
+
+-<c: choose>
+
+ 
+
+자바에 스위치문과 동일
+
+1.<c:choose>
+
+ 
+
+2.<c:choose>
+
+<c:when test="${조건설정 != || == || eq || empty ... }">
+
+조건에 맞으면 출력될 문장 <c:out value ="${조건}"/>
+
+</c:when>
+
+
+3.<c: otherwise>
+
+  출력된문장으로 defualt 기능 
+     </c:choose>
