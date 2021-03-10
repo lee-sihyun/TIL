@@ -8,19 +8,43 @@ public class Cal {
 	
 		Scanner sc = new Scanner(System.in);
 
+		
+		/*1000*/
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		System.out.println(a+b);
+		
+		
+		
+		
+		/*1001*/
 		int c = sc.nextInt();
 		int d = sc.nextInt();
 
 
-		/*
-		 * try { int a = scanner.nextInt(); int b = scanner.nextInt();
-		 * System.out.println(a + b); } catch (Exception e) { System.out.printf("¿¡·¯",
-		 * e); }
-		 */
 
 
 		System.out.println(c-d);
 
+
+		
+		/*10998*/
+
+		
+		int e = sc.nextInt();
+		int f = sc.nextInt();
+
+
+
+
+		System.out.println(e-f);
+
+	
+	
 	}
+
+
+
+
 
 }

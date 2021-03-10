@@ -1,0 +1,39 @@
+
+[윤성우의 java 열혈 프로그래밍을 보며 정리하였다.]
+
+[래퍼클래스]: 정수,실수,문자같은 기본자료형들을 감싸는 클래스
+
+•기본 자료형:
+
+- 인스턴스의 참조값을 요구하는 자리에 기본자리 값을 놓을때 필요 
+
+- 예시 : Boolean,Character,Byte,Short,Interger,Long,Float,Double 
+
+ex: public Boolean(boolean value)
+
+•기능:
+
+- 박싱 (Boxing) :인스턴스를 감싼다는 의미로 인스턴스의 생성을 통해 이뤄짐
+
+-언박싱 (UnBoxing) :인스턴스에서 값을 꺼낸다는 의미로 래퍼클래스에 정의된 메소드의 호출을 통해 이뤄짐 
+
+인스턴스에서 값을 꺼냄 
+
+•래퍼 클래스별 언박싱 메소드
+
+-Boolean : public boolean blooeanValue()
+
+-Character : public char charValue()
+
+-Integer :  public int intValue()
+
+-Long : public long longValue()
+
+-Double : public double doubleValue()
+
+•Number클래스
+
+-모든 래퍼클래스는 java.lang.Number 를 상속 ( 이 클래스는 publiv abstract int intValue, long longValue,double doubleValue가 존재한다)
+
+--> 어떤한 래퍼 인스턴스를 대상으로 인스턴스에 저장된 값을 다양한 형태로 변환가능
+
