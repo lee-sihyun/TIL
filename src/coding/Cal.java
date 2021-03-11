@@ -41,6 +41,18 @@ public class Cal {
 
 	
 	
+		/*108*/
+		
+		int g = sc.nextInt();
+		int h = sc.nextInt();
+
+
+
+
+		System.out.println(g-h);
+		
+		
+		
 	}
 
 
