@@ -53,6 +53,22 @@ public class Cal {
 		
 		
 		
+		
+		/*10869*/
+		
+		int i;
+		int j;
+		
+		i=sc.nextInt();
+		j=sc.nextInt();
+		
+		System.out.println(i+j);
+		System.out.println(i-j);
+		System.out.println(i*j);
+		System.out.println(i/j);
+		System.out.println(i%j);
+		
+		
 	}
 
 
