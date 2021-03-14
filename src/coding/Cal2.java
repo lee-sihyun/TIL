@@ -21,6 +21,24 @@ public class Cal2 {
 		System.out.println((a * b) % c);
 		System.out.println((a % c + b % c) % c);
 
+		
+		
+		/*2588*/
+		
 
+		int A,B;
+		
+		A= sc.nextInt();
+		B= sc.nextInt();
+		
+		
+		System.out.println(A*(B%10));
+		System.out.println(A*(B%100/10));
+		System.out.println(A*(B/10));
+		System.out.println(A*B);
+		
+		
+		
+		
 	}
 }
