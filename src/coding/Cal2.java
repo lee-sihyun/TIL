@@ -39,6 +39,21 @@ public class Cal2 {
 		
 		
 		
+		/*1330*/
+		int C,D; 
+		
+		C=sc.nextInt();
+		D=sc.nextInt();
+		
+		if(C>D) {
+			
+			System.out.println(">");
+		}else if(C<D) {
+			System.out.println(">");
+		}else {
+			System.out.println("==");	
+		}
+		
 		
 	}
 }
