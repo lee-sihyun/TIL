@@ -2,6 +2,7 @@ package coding;
 
 import java.util.*;
 
+/*2741*/
 public class NSum {
 	public static void main(String[] args) {
 
